@@ -61,10 +61,10 @@ INSERT INTO `cake_ingredient` (`cake_id`, `ingredient_id`, `quantity`) VALUES
 
 
 INSERT INTO `clients` (`name`, `middle_name`, `last_name`, `phone_number`, `email`, `birth_date`, `created_at`, `updated_at`) VALUES 
-('Наталья', 'Викторовна', 'Максимова', '89084734565', 'natasha123@mail.ru', '1987-12-22', NOW(), NOW()),
+('Наталья', 'Викторовна', 'Максимова', '89086734565', 'natasha123@mail.ru', '1987-12-22', NOW(), NOW()),
 ('Виктор', 'Александрович', 'Андреев', '89084742365', 'victor123@mail.ru', '1975-02-19', NOW(), NOW()),
-('Александра', NULL, NULL, '89084734565', NULL, NULL, NOW(), NOW()),
-('Полина', NULL, NULL, '89084734565', NULL, NULL, NOW(), NOW());
+('Александра', NULL, NULL, '89084734165', NULL, NULL, NOW(), NOW()),
+('Полина', NULL, NULL, '89081734565', NULL, NULL, NOW(), NOW());
 
 
 INSERT INTO `orders` (`client_id`, `execution_date`, `status`, `comment`, `cost`, `created_at`, `updated_at`) VALUES 
