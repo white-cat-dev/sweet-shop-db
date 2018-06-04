@@ -30,7 +30,7 @@ WHERE `cake_title` = "Торт «Фруктовый»";
 /* Полная информация о заказе */
 CREATE VIEW `order_view` AS
 SELECT 
-	o.`id`,
+	o.`id` order_id,
 	o.`client_id` client_id,
 	cl.`name` client_name,
 	cl.`phone_number` client_phone_number,
@@ -42,9 +42,9 @@ SELECT
 	o.`updated_at` updated_at,
 	c.`id` cake_id,
 	c.`title` cake_title,
-	co.`quantity`
+	co.`quantity` quantity
 FROM `orders` o
-JOIN `client` cl ON cl.`id` = o.`client_id`
+JOIN `clients` cl ON cl.`id` = o.`client_id`
 JOIN `cake_order` co ON o.`id` = co.`order_id`
 JOIN `cakes` c ON c.`id` = co.`cake_id`;
 
