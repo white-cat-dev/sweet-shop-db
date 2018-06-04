@@ -25,18 +25,14 @@
 
 ## Представления
 * **Cakes_view** — полная информация о торте.  
-#### Пример использования:
-    
+#### Пример использования:   
     /* Узнать количество ингредиентов для торта «Фруктовый» */
     SELECT `cake_title`, `ingredient_title`, `quantity` 
     FROM `cakes_view`
     WHERE `cakes_title`;
   
-  
-  
 * **Order_view** — полная информация о заказе.  
 #### Примеры использования:
-
     /* Уточнить номер телефона клиента, сделавшего заказ */
     SELECT `order_id`, `client_name`, `client_phone_number` 
     FROM `order_view`
