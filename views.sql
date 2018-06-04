@@ -47,3 +47,13 @@ FROM `orders` o
 JOIN `client` cl ON cl.`id` = o.`client_id`
 JOIN `cake_order` co ON o.`id` = co.`order_id`
 JOIN `cakes` c ON c.`id` = co.`cake_id`;
+
+/* Уточнить номер телефона клиента, сделавшего заказ */
+SELECT `order_id`, `client_name`, `client_phone_number` 
+FROM `order_view`
+WHERE `order_id` = 3;
+
+/* Уточнить состав заказа */
+SELECT `order_id`, `cake_title`, CONCAT(`quantity`, " шт.") 
+FROM `order_view`
+WHERE `order_id` = 4;
